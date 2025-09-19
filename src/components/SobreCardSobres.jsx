@@ -22,7 +22,7 @@ const SobreCardComponent = () => {
           {markets.map((market) => (
             <div
               key={market.id}
-              className="bg-white rounded-2xl shadow-lg p-[60px] flex flex-col items-center h-full "
+              className="bg-white rounded-2xl shadow-lg p-[30px] md:p-[60px] flex flex-col items-center h-full "
             >
               <img
                 src={market.image}

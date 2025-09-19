@@ -43,22 +43,22 @@ import { useNavigate } from "react-router-dom";
   ];
 
   return (
-    <section className="bg-[#A1C128] pb-[250px] pt-[180px]">
-      <div className="max-w-7xl mx-auto text-center">
+    <section className="bg-[#A1C128] md:pb-[250px] md:pt-[180px] py-[60px]">
+      <div className="max-w-7xl mx-auto text-center p-5 md:p-0">
         <p className="text-white uppercase text-2xl leading-[22px]  font-medium">
           Os nossos produtos
         </p>
-        <h2 className="text-6xl leading-[45px] mt-10 font-medium  text-outline-pink font-mono45">
+        <h2 className="md:text-6xl text-5xl leading-[45px] mt-10 font-medium  text-outline-pink font-mono45">
           Temos o melhor da natureza para si!
         </h2>
-        <p className="text-white mt-6 text-2xl font-medium leading-7 font-poppins">
+        <p className="text-white mt-6 text-xl md:text-2xl font-medium leading-7 font-poppins">
           Cultivamos as frutas mais frescas e saborosas em ambientes
           controlados, garantindo condições ideais para o seu crescimento
           saudável.
         </p>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-12">
           {productsData.map((product) => (
             <div
               key={product.id}
